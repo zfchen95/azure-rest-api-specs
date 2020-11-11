@@ -2382,6 +2382,11 @@
             "modelAsString": true
           },
           "description": "Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property."
+        },
+        "isLocalUserEnabled": {
+          "type": "boolean",
+          "x-ms-client-name": "IsLocalUserEnabled",
+          "description": "Enable or disable local user feature of the storage account"
         }
       },
       "description": "The parameters used to create the storage account."
@@ -2835,6 +2840,11 @@
             "modelAsString": true
           },
           "description": "Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property."
+        },
+        "isLocalUserEnabled": {
+          "type": "boolean",
+          "x-ms-client-name": "IsLocalUserEnabled",
+          "description": "Enable or disable local user feature of the storage account"
         }
       },
       "description": "Properties of the storage account."
@@ -3020,6 +3030,11 @@
             "modelAsString": true
           },
           "description": "Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property."
+        },
+        "isLocalUserEnabled": {
+          "type": "boolean",
+          "x-ms-client-name": "IsLocalUserEnabled",
+          "description": "Enable or disable local user feature of the storage account"
         }
       },
       "description": "The parameters used when updating a storage account."
@@ -3901,6 +3916,18 @@
       "properties": {
         "permissions": {
           "type": "string",
+          "enum": [
+            "r",
+            "w",
+            "d",
+            "l",
+            "c"
+          ],
+          "x-ms-enum": {
+            "name": "Permissions",
+            "modelAsString": true
+          },
+          "x-ms-client-name": "Permissions",
           "description": "The permissions for the local user. Possible values include: Read (r), Write (w), Delete (d), List (l), and Create (c)."
         },
         "service": {
