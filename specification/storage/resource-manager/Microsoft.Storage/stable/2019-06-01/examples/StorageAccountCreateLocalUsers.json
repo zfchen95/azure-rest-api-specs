@@ -9,12 +9,12 @@
       "properties": {
         "permissionScopes": [
           {
-            "permissions": "rwdlc",
+            "permissions": "rwd",
             "service": "file",
             "resourceName": "share1"
           },
           {
-            "permissions": "rl",
+            "permissions": "r",
             "service": "file",
             "resourceName": "share2"
           }
@@ -32,12 +32,12 @@
         "properties": {
           "permissionScopes": [
             {
-              "permissions": "rwdlc",
+              "permissions": "rwd",
               "service": "file",
               "resourceName": "share1"
             },
             {
-              "permissions": "rl",
+              "permissions": "r",
               "service": "file",
               "resourceName": "share2"
             }
